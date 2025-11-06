@@ -84,5 +84,5 @@ if fig3 is not None:
     st.plotly_chart(fig3, use_container_width=True)
 
 st.markdown("---")
-st.caption("Developed by Ashkan Ahmadi — netblag-isj")
+st.caption("Developed by Ashkan Ahmadi — netblag")
 
