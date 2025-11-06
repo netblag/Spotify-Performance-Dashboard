@@ -4,9 +4,21 @@
 
 ---
 
+## Dataset
+
+The dataset used for this project is publicly available here:  
+[Spotify Quarterly Financials & Users](https://www.kaggle.com/datasets/mauryansshivam/spotify-revenue-expenses-and-its-premium-users)  
+
+It includes:
+- Quarterly financial data (Revenue, Costs, Gross Profit)
+- User data (MAUs, Premium MAUs, Ad MAUs)
+- ARPU and other key metrics
+
+---
+
 ## Features
 
-- Key Performance Indicators (KPIs) displayed at the top:
+- Key Performance Indicators (KPIs):
   - Total Revenue (€M)
   - Gross Profit (€M)
   - Profit Margin (%)
@@ -22,34 +34,49 @@
 - Theme switcher:
   - Light, Dark, and Spotify custom theme
 - Fully responsive layout
-- Designed for Streamlit with Plotly charts
+- Developed using Streamlit and Plotly
 
 ---
 
-## Tech Stack & Libraries
+## Analysis & Insights
 
-- **Python 3.10+**
-- **Streamlit**: for creating the interactive dashboard
-- **Pandas**: for data cleaning and processing
-- **Plotly**: for interactive and aesthetic visualizations
-- **Plotly Express & Graph Objects**: for line, bar, and pie charts
-- **HTML/CSS**: minor customization for theme styling
+- **Revenue & Profit Trends:** Total revenue steadily increased from 2016–2023, with some seasonal fluctuations. Gross profit shows a similar upward trend, and profit margin stabilized around 25–30% in recent years.
+- **User Growth:** MAUs (monthly active users) have grown consistently, driven primarily by Premium subscriptions. Ad-supported users form a smaller, more volatile share.
+- **Cost Breakdown:** Marketing and R&D expenses are the largest cost components. Admin costs remain stable.
+- **Revenue Drivers:** Premium subscriptions are the main revenue driver (>85%), while ad revenue contributes a smaller portion but shows growth in recent quarters.
+- **QoQ Growth:** Some quarters show negative QoQ growth due to seasonality, especially around the end of the year.
 
 ---
 
+## Project Structure
+
+Spotify/
+│
+├─ app/
+│ └─ streamlit_app.py # Main Streamlit app
+│
+├─ src/
+│ ├─ data_processing.py # Load and clean CSV data
+│ ├─ analysis.py # KPI calculations
+│ └─ visualizations.py # Plotly charts functions
+│
+├─ data/
+│ └─ Spotify Quarterly.csv # Dataset
+│
+└─ README_EN.md # English documentation
+└─ README_FA.md # Persian documentation
+
+---
 
 
 ---
 
 ## How It Works
 
-1. **Data Loading**: Reads the `Spotify Quarterly.csv` dataset and cleans numeric columns.
-2. **KPI Calculation**: Computes Total Revenue, Gross Profit, Profit Margin, MAUs, Premium & Ad share, QoQ growth, and Revenue Change.
-3. **Visualization**: Generates interactive charts:
-   - Bar + line chart for Revenue & Profit
-   - Line chart for User Growth
-   - Pie chart for Cost Breakdown
-4. **Theme Switching**: Users can choose Light, Dark, or Spotify custom theme, dynamically updating colors and styles.
+1. **Data Loading:** Reads the dataset and cleans numeric columns.
+2. **KPI Calculation:** Computes Total Revenue, Gross Profit, Profit Margin, MAUs, Premium & Ad share, QoQ growth, and Revenue Change.
+3. **Visualization:** Generates interactive charts using Plotly.
+4. **Theme Switching:** Users can select Light, Dark, or Spotify custom theme.
 
 ---
 
@@ -60,7 +87,3 @@ git clone https://github.com/netblag/Spotify-Dashboard.git
 cd Spotify-Dashboard
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py
-
-
-## Project Structure
-
