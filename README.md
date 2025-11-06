@@ -87,3 +87,14 @@ git clone https://github.com/netblag/Spotify-Dashboard.git
 cd Spotify-Dashboard
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py
+```
+
+<p align="center">
+  <a href="https://github.com/netblag">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/ccc?viewbox=auto" />
+      <source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github?viewbox=auto" />
+      <img alt="GitHub" height="90" src="https://cdn.simpleicons.org/github?viewbox=auto" />
+    </picture>
+  </a>
+  
