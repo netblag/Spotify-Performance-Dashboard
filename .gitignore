@@ -1,0 +1,22 @@
+
+```gitignore
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Data files
+data/*.csv
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# VSCode settings folder
+.vscode/
+
+# Streamlit cache
+.streamlit/
+
+# Anaconda env
+env/
